@@ -1,0 +1,98 @@
+.bg-m{
+    background-color: aquamarine;
+    font-size: 20px;
+}
+h1{
+    font-size: 25px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.n{
+    margin-top: 35px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    border-left: 2px solid aquamarine;
+    border-right: 2px solid aquamarine;
+}
+
+.tr {
+    height: 50px;
+}
+
+.tr:nth-child(even){
+    background-color: bisque;
+}
+.tr:nth-child(odd){
+    background-color: beige;
+}
+.co{
+    background-color: rgb(92, 231, 92);
+}
+.th1 {
+    background-color: rgb(92, 231, 92);
+    width: 75%;
+}
+
+.th2 {
+    background-color: rgb(92, 231, 92);
+    width: 25%;
+}
+
+.td1 {
+    width: 75%;
+}
+
+.td1 p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.td2 {
+    width: 25%;
+}
+
+.td2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.mob-divider {
+    height: 2px;
+    width: 75%;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+tbody tr {
+    animation: 0.5s fade-in;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media(min-width: 768px) {
+    main {
+        height: 80vh;
+    }
+
+    .table-div {
+        border-left: 2px solid aquamarine;;
+        height: 50vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .mob-divider {
+        display: none;
+    }
+}
